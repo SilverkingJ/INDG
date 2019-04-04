@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link href="final.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="final.js"></script>
+<title>Jason's Perfect Website</title>
+</head>
+
+<body>
+  <header>
+      <h1>INDG 2P51</h1>
+      <h1>Medicine Wheel</h1>
+      <a id = "star" href = "question.html"> Interesting Qusetion about myself </a>
+      <iframe src="https://giphy.com/embed/13Uqp5IGFpmDle" width="400" height="190" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+  <div id = "nine">
+      <img src = "https://gartic.com.br/imgs/mural/va/valterbranco/kyuubi.png" width="400" height="190" frameBorder="0">
+  </div>
+  </header>
+
+
+<div class = "main">
+ <nav>
+  <ul>
+
+    <li> <a href = final.html> East </a> </li>
+    <li> <a href = page2.html> South </a> </li>
+    <li> <a href = page3.html> West</a> </li>
+    <li> <a href = "http://www.ghana.gov.gh/"> Home country</a> </li>
+
+  </ul>
+</nav>
+<br/>
+<br/>
+<br/>
+<p>North Game</p>
+<p> I stand for creativity and Inclusitivity, As a human i strive to be as creative as possible and always be proud of the work i do. In terms
+  of inclusivity I want to create stories that include many different races and cultures. My motivation in life is seeing my parents happy and proud
+  of me.</p>
+<h4> Mayos North</h4>
+  <p>
+    What I stand for is to try make a difference and contribute something meaningful to the world or society for a purpose </br>
+   Whether it is teaching the future generations with my career or building a school in a developing country, that would make me satisfied </br>
+   I believe that kids should be educated so that they have some knowledge and use it to their possible advantages and become a strong individual </br>
+   This is what drives me to becoming a future teacher </br>
+   I also believe that empowering and supporting these kids in the making for the future is important so that they can become a big figure for the future society/generations. These future students can end up growing to whatever they want to be with the knowledge they possess and chase their dreams/future ambitions for the next era. </br>
+
+  </p>
+
+<p>
+
+  <h4> TRC calls to action</h4>
+  <p>Sports and reconcilliation</p>
+  <p>We call upon all levels of government, in collaboration with aboriginal peoples, sports halls of fame, and other relevant organizations, to provide public education
+    that tells the national story of aboriginal athletes in history.
+  </p>
+
+  <h4> Mayos TRC calls to action</h4>
+  <p>For Education</p>
+  <p> 62. We call upon the federal, provincial, and territorial governments, in consultation and collaboration with Survivors, Aboriginal peoples, and educators, to: </br> </br>
+i. Make age-appropriate curriculum on residential schools, Treaties, and Aboriginal peoples’ historical and contemporary contributions to Canada a mandatory education requirement for Kindergarten to Grade Twelve students. </br></br>
+ii. Provide the necessary funding to post-secondary institutions to educate teachers on how to integrate Indigenous knowledge and teaching methods into classrooms. </br></br>
+iii. Provide the necessary funding to Aboriginal schools to utilize Indigenous knowledge and teaching methods in classrooms. </br></br>
+iv. Establish senior-level positions in government at the assistant deputy minister level or higher dedicated to Aboriginal content in education </br></br>
+Incorporating indigenous culture, history and other subjects in classroom is essential </br></br>
+Including indigenous studies in the curriculum and teaching who they are would make students recognize who the first inhabitants of the nation are</br></br>
+Even practicing activities relating to Indigenous culture such as class circles would be a start </br></br>
+In the end, it is all about inclusiveness and changing the Westernized dominant curriculum
+
+
+  </p>
+
+  <h4>HTML Trivia Game</h4>
+
+       Video Game Trivia
+
+       <br />
+
+       Asking question <span id="NumberAsked">1</span> of 10 with <span id="NumberCorrect">0</span> answers correct</p>
+
+   <p>
+
+       <span id="TriviaQuestion">???</span>
+
+   </p>
+
+   <p>
+
+       &nbsp;
+
+       <input id="RadioTrue" type="radio" value="true" name="answer" checked="checked" /> True
+
+       &nbsp;&nbsp;&nbsp;
+
+       <input id="RadioFalse" type="radio" value="false" name="answer" /> False
+
+   </p>
+
+   <p>
+
+       <input id="ButtonContinue" onclick="checkAnswer();" type="button" value="continue" />
+
+   </p>
+
+
+
+   <script language="javascript" type="text/javascript">
+
+       // Array of trivia data
+
+       var TriviaData = new Array(10)
+
+       createTwoDimensionalArray(3);
+
+
+
+       // Variables to track state of the game
+
+       // i.e. number questions asked, current correct total and current question
+
+       var questionsAsked = 0;
+
+       var totalCorrect = 0;
+
+       var currentQuestion = 0;
+
+       var selectionValid = false;
+
+
+
+       // Questions
+
+       TriviaData[0][0] = "Jason loves creating stories";
+
+       TriviaData[1][0] = "Jason grew up in a secluded neighbourhood";
+
+       TriviaData[2][0] = "Jason played football with his best friend in highschool";
+
+       TriviaData[3][0] = "The current class is Film 1f97";
+
+       TriviaData[4][0] = "Jason has no inspiration in life";
+
+       TriviaData[5][0] = "Jasons older brother is the reason he loves web development";
+
+       TriviaData[6][0] = "Jason Intends to carry on making websites and software";
+
+       TriviaData[7][0] = "Jason is Fluent in two Computer languages";
+
+       TriviaData[8][0] = "Jasons Family is really religious";
+
+       TriviaData[9][0] = "Jasons family is native to Nigeria";
+
+
+
+       // Answers
+
+       TriviaData[0][1] = "true";
+
+       TriviaData[1][1] = "false";
+
+       TriviaData[2][1] = "true";
+
+       TriviaData[3][1] = "false";
+
+       TriviaData[4][1] = "false";
+
+       TriviaData[5][1] = "true";
+
+       TriviaData[6][1] = "true";
+
+       TriviaData[7][1] = "false";
+
+       TriviaData[8][1] = "true";
+
+       TriviaData[9][1] = "false";
+
+
+
+       // Has question been asked
+
+       // -- necessary because we are asking in random order
+
+       TriviaData[0][2] = "no";
+
+       TriviaData[1][2] = "no";
+
+       TriviaData[2][2] = "no";
+
+       TriviaData[3][2] = "no";
+
+       TriviaData[4][2] = "no";
+
+       TriviaData[5][2] = "no";
+
+       TriviaData[6][2] = "no";
+
+       TriviaData[7][2] = "no";
+
+       TriviaData[8][2] = "no";
+
+       TriviaData[9][2] = "no";
+
+
+
+       // Load up first question
+
+       setQuestion();
+
+
+
+       // Sets question text and indicator so that we know the question has been displayed
+
+       function setQuestion() {
+
+           selectionValid = false; // Flag to make sure question has not been asked yet
+
+           while (selectionValid == false) {
+
+               currentQuestion = Math.floor(Math.random() * 10); // randomly select starting question
+
+               if (TriviaData[currentQuestion][2] == "no") {
+
+                   selectionValid = true;
+
+               }
+
+           }
+
+           document.getElementById("TriviaQuestion").innerHTML = TriviaData[currentQuestion][0];
+
+           TriviaData[currentQuestion][2] = "yes";
+
+           questionsAsked = questionsAsked + 1;
+
+       }
+
+
+
+       function processAnswer(myAnswer) {
+
+           if (TriviaData[currentQuestion][1] == myAnswer) {
+
+               // answer correct
+
+               totalCorrect = totalCorrect + 1;
+
+           }
+
+       }
+
+
+
+       // This function creates our two dimensional array
+
+       function createTwoDimensionalArray(arraySize) {
+
+           for (i = 0; i < TriviaData.length; ++i)
+
+               TriviaData[i] = new Array(arraySize);
+
+       }
+
+
+
+       // This function checks the answer, updates correct total
+
+       // and randomly selects the next question
+
+       function checkAnswer() {
+
+           if (document.getElementById("RadioTrue").checked) {
+
+               processAnswer("true");
+
+           }
+
+           else {
+
+               processAnswer("false");
+
+           }
+
+           // get next question if not asked all yet
+
+           if (questionsAsked < 10) {
+
+               setQuestion();
+
+           }
+
+           // final question asked - disable button and show final results
+
+           else {
+
+               alert("Quiz complete! You got " + totalCorrect + " correct out of 10.");
+
+               document.getElementById("ButtonContinue").disabled = true;
+
+           }
+
+           // update totals
+
+           document.getElementById("NumberAsked").innerHTML = questionsAsked;
+
+           document.getElementById("NumberCorrect").innerHTML = totalCorrect;
+
+       }
+
+
+
+   </script>
+
+
+ </div>
+
+
+  </div>
+
+<footer>
+<center><h3> A IASC 1P02 Student Production </h3>
+<div>
+<script>
+  var myDate = new Date();
+  document.write(myDate);
+</script>
+<br/>
+
+<button type="button" onclick="getPrompt()">What Class Is This?</button>
+<script>
+getPrompt()
+{
+ alert("This is Class IASC 1P02");
+}
+
+</script>
+</div>
+
+</footer>
+
+
+</body>
+</html>
